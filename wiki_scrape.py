@@ -34,6 +34,11 @@ def get_all_links(soup):
 
 	return links
 
+
+def store(page_name, links):
+	# Store in either: Database (MongoDB) or Excel
+	pass
+
 def run():
 	url = get_random_page_url()
 	page = get_soup(url)
