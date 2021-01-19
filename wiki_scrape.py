@@ -1,10 +1,8 @@
-from typing import List
 import requests
 import config
+import pymongo
 from pymongo import MongoClient
 from bs4 import BeautifulSoup
-from pprint import pprint
-
 
 client = config.connect
 db = client.wiki
